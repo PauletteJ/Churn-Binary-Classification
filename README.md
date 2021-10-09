@@ -8,13 +8,13 @@ To identify general improvements, it is not necessary to identify every churn in
 
 The dataset contained 20 features. The columns in red were dropped because of low relevance (State, Phone Number) and correlation with other columns (eg Total Day Charges had a perfect correlation with Totaal Day Minutes since the charge is based on the Total Day Minutes). 
 
-![Churn Dataset](/images/dataset.jpeg)
+![Churn Dataset](images/dataset.jpg)
 
 # Final Feature Set Importance
 
 Two features stood out as being most important: Total Day Minutes and Customer Service Calls. Both make sense as heavy users and those interacting with customer service are likely to be the users experiencing the most problems, and therefore the most dissatisfaction. 
 
-![Churn Feature Set](/images/FeatureSet.jpeg)
+![Churn Feature Set](images/FeatureSet.jpg)
 
 # Evaluation Criteria
 
@@ -32,38 +32,39 @@ The confusion matrix will be the most important criterion. Since the goal of thi
 
 The first model considered is a logistic regression model. It had a low F1 Score (a 0.37 in a range of 0-1.0) and an accuracy of 0.71. Most importantly, the majority of the predicted positives are false positives (the upper right corner of the confusion matrix) rather than true positives (lower right of the confusion matrix). It leaves plenty of room for improvement.
 
-![Logistic Regression Model](/images/LogisticRegression.jpeg)
+![Logistic Regression Model](images/LogisticRegression.jpg)
 
 # GaussianNB Model
 
 The second model considered is a GaussianNB model. Its F1 Score is not much better. its accuracy is lower, and it has more false positives.
 
-![GaussianNB Model](/images/GaussianNB.jpeg)
+![GaussianNB Model](images/GaussianNB.jpg)
 
 # KNN Model
 
 The third model considered is a K Nearest Neighbor model, and its performance was similar to the first two.
 
-![KNN Model](/images/KNN.jpeg)
+![KNN Model](images/KNN.jpg)
 
 # Gradient Boost Model
 
 Here we see some improvement. The number of false positives, 69 is less than the number of true positives, and that is reflected in higher F1 and Accuracy scores.
 
-![Gradient Boost Model](/images/GradientBoost.jpeg)
+![Gradient Boost Model](images/GradientBoost.jpg)
 
 # Random Forest Model
 
 The Random Forest Model is better still. There is a better true positive to false positive ratio than the Gradient Boost Model.
 
-![Random Forest Model](/images/RandomForest.jpeg)
+![Random Forest Model](images/RandomForest.jpg)
 
 
 # XGBoost Model
 
 Finally, we have the XGBoost model which has the best ratio of true positives to false positives, along with the best F1 and Accuracy scores.
 
-![Random Forest Model](/images/RandomForest.jpeg)
+![Random Forest Model](images/RandomForest.jpg)
+
 
 # Conclusions
 
