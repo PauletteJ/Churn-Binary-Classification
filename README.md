@@ -63,7 +63,7 @@ The Random Forest Model is better still. There is a better true positive to fals
 
 Finally, we have the XGBoost model which has the best ratio of true positives to false positives, along with the best F1 and Accuracy scores.
 
-![Random Forest Model](images/RandomForest.jpg)
+![XGBoost Model](images/XGBoostjpg)
 
 
 # Conclusions
